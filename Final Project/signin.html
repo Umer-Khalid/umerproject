@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript">
+		function changedata() {
+			
+			document.getElementById('b6').style.color="green";
+			document.getElementById('b6').style.fontSize="20px";
+			document.getElementById('b6').innerHTML="You are successfully logged in.";
+			if(document.getElementById('b3').value=='')
+			{
+				document.getElementById('b6').style.color="red"
+				document.getElementById('b6').innerHTML="Type Something you have not logged in.";
+			}
+
+			document.getElementById('b7').style.color="white";
+			document.getElementById('b7').innerHTML="Now Click Me";
+			document.getElementById('b3').value="";
+			document.getElementById('b4').value="";
+		}
+	</script>
+</head>
+<body class="w8 container-fluid">
+	
+
+
+
+
+<section>
+
+
+
+	<div id="b0">Welcome our customer once again.Login to continue.</div>
+	<div id="b1" style="background-color: rgb(201,179,160);">
+		<div id="b2"><b>Enter your Email or username. </b>
+		<input id="b3" type="text" placeholder="Email,username" /></div>
+			<div id="b2"><b>Enter your Password. </b></br>
+		<input id="b4" type="Password" placeholder="Password"></div>
+		<input id="b5" type="button" value="Login" onclick="changedata()"/>
+		<div id="b6"> </div>
+
+		<a style="margin-top: 25px;" href="../umer.html" id="b7"></a>
+
+	</div>
+	<div class="as row"><div>You are now our regular customer</div></div>
+</section>
+</body>
+</html>

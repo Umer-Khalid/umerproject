@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="text/javascript">
+    function changedata() {
+      
+      document.getElementById('b14').style.color="green";
+      document.getElementById('b14').style.fontSize="20px";
+      document.getElementById('b14').innerHTML="You are successfully logged in.";
+      
+      if(document.getElementById('b11').value=='')
+      {
+        document.getElementById('b14').style.color="red"
+        document.getElementById('b14').innerHTML="Type Something you have not logged in.";
+      }
+      else if(document.getElementById('b9').value=='')
+      {
+        document.getElementById('b14').style.color="red"
+        document.getElementById('b14').innerHTML="Type Something you have not Signed in.";
+      }
+else if(document.getElementById('b10').value=='')
+      {
+        document.getElementById('b14').style.color="red"
+        document.getElementById('b14').innerHTML="Type Something you have not Signed in.";
+      }
+      else{
+      document.getElementById('b15').style.color="white";
+      document.getElementById('b15').innerHTML="Now Click Me";
+     
+    }
+      
+    }
+  </script>
+</head>
+<body class="w8" style="background-color: rgb(201,179,160);">
+  
+  <div id="b12">If you are not registered yet then Register now.Fill up the required instruction if you want become our regular customer.</div>
+  <div id="b8">
+    <div id="b9"><b>Enter your First name. </b>
+    <input id="b10" type="text" placeholder="First name" /></div>
+    <div id="b9"><b>Enter your Last name. </b>
+    <input id="b10"style="margin-left: 43px;" type="text" placeholder="Last name" /></div>
+    <div id="b9"><b>Enter your Email address. </b>
+    <input id="b10" style="margin-left: 16px;" type="text" placeholder="Email" /></div>
+    <b style="margin-left: 13px;">Male: <input type="radio" name="u"> Female <input type="radio" name="u"></b>
+    <div id="b9"><b>Enter your Home Address For Home Delivery. </b></br>
+    <input id="b11" type="text" placeholder="Address"></div>
+      <div id="b9"><b>Enter your Password. </b></br>
+    <input id="b11" type="Password" placeholder="Password"></div>
+    <div id="b9"><b>Re-Enter your Password for confirmation. </b></br>
+    <input id="b11" type="Password" placeholder="Password"></div>
+    <input id="b13" type="button" value="Sign up" onclick="changedata()"/>
+    <div id="b14"> </div>
+
+    <a style="margin-top: 25px;" href="../umer.html" id="b15"></a>
+
+  </div>
+  <div class="as">Thanks For Becoming Our regular customer</div>
+
+</body>
+</html>
